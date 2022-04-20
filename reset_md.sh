@@ -21,7 +21,7 @@ for file in `ls $1`
       read_dir $1"/"$file $2+1
     else
       echo $1"/"$file
-      echo "* $file" >> README.md
+      echo "[$file]($1"/"$file)" >> README.md
     fi
   done 
 }
